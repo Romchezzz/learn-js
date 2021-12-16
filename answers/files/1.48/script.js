@@ -25,32 +25,32 @@ function onSubmit () {
 
     case'SUBTRACTION':
       expression = (`(${expression || leftOperand} - ${rightOperand})`);
-      result = leftOperand - rightOperand
+      result = leftOperand - rightOperand;
        break;
 
     case'MULTIPLICATION':
       expression = (`(${expression || leftOperand} * ${rightOperand})`);
-      result = leftOperand * rightOperand
+      result = leftOperand * rightOperand;
       break;
 
     case'EXPONENTIATION':
       expression = (`(${expression || leftOperand}xª ${rightOperand})`);
-      result = leftOperand ** rightOperand
+      result = leftOperand ** rightOperand;
       break;
 
     case'DIVISION':
       expression = (`(${expression || leftOperand}/ ${rightOperand})`);
-      result = leftOperand / rightOperand
+      result = leftOperand / rightOperand;
       break;
 
     case'MODULUS':
       expression = (`(${expression || leftOperand}% ${rightOperand})`);
-      result = leftOperand % rightOperand
+      result = leftOperand % rightOperand;
       break;
 
     case'ROOT':
       expression = (`(${expression || leftOperand}√ ${rightOperand})`);
-      result = rightOperand ** (1/leftOperand)
+      result = rightOperand ** (1/leftOperand);
       break;
 
   }
