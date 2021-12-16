@@ -55,8 +55,8 @@ function onSubmit () {
 
   }
 
-  setExpression(`${expression} = ${result}`);
-  setResult(result)
+  setExpression(`${expression} = ${result}` && '');
+  setResult(result);
 }
 
 function onClear () {
