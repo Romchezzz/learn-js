@@ -6,7 +6,15 @@ const newFruits = [...fruits];
 
 ## Задача/Вопрос 2
 ```js
+const fruits = ['Apple', 'Orange', 'Pineapple'];
+const otherFruits = ['Orange', 'Plum', 'Pineapple', 'Apple'];
 
+const allFruits = [...fruits, ...otherFruits].reduce((prev, cur) =>
+    prev.includes(cur) ?
+        [...prev]:
+        [...prev, cur], []);
+
+console.log(allFruits);
 ```
 
 ## Задача/Вопрос 3
