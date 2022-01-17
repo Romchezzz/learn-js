@@ -6,15 +6,17 @@ const newFruits = [...fruits];
 
 ## Задача/Вопрос 2
 ```js
-const fruits = ['Apple', 'Orange', 'Pineapple'];
-const otherFruits = ['Orange', 'Plum', 'Pineapple', 'Apple'];
+const fruits = ['Apple', 'Orange', 'Pineapple', 'Pineapple'];
+const otherFruits = ['Orange', 'Plum', 'Pineapple'];
+const allArray = [...fruits, ...otherFruits];
 
-const allFruits = [...fruits, ...otherFruits].reduce((prev, cur) =>
-    prev.includes(cur) ?
-        [...prev]:
-        [...prev, cur], []);
+function deleteDoubles (item, index) {
+    return allArray.indexOf(item) === index;
+};
 
-console.log(allFruits);
+const newFruit = allArray.filter(deleteDoubles);
+
+console.log(newFruit);
 ```
 
 ## Задача/Вопрос 3
